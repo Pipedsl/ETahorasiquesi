@@ -1,0 +1,11 @@
+<section>
+  <ion-text color="primary">
+    <h1>Generar QR</h1>
+  </ion-text>
+  <br>
+  <ion-button (click)="generarQR()">
+    Generar Qr
+    <qrcode [qrdata]="codigoQr" [width]="400"></qrcode>
+  </ion-button>
+  
+<section>

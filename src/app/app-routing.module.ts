@@ -8,18 +8,6 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'inicio-sesion',
-    loadChildren: () => import('./inicio-sesion/inicio-sesion.module').then( m => m.InicioSesionPageModule)
-  },
-  {
-    path: 'recuperar-contrasenia',
-    loadChildren: () => import('./recuperar-contrasenia/recuperar-contrasenia.module').then( m => m.RecuperarContraseniaPageModule)
-  },
-  {
-    path: 'principal',
-    loadChildren: () => import('./principal/principal.module').then( m => m.PrincipalPageModule)
-  },
-  {
     path: 'auth',
     loadChildren: () => import('./pages/auth/auth.module').then( m => m.AuthPageModule)
   },
